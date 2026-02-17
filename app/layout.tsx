@@ -30,20 +30,11 @@ export const metadata: Metadata = {
     siteName: 'SAFELY',
     locale: 'tr_TR',
     type: 'website',
-    images: [
-      {
-        url: '/og-image.png', // TODO: OG image ekle
-        width: 1200,
-        height: 630,
-        alt: 'SAFELY App',
-      },
-    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: "SAFELY - Check-in. Stay connected. Feel safe.",
     description: "Sevdiklerinizle bağlantıda kalın. Akıllı check-in, konum paylaşımı ve anlık bildirimler ile güvende hissedin.",
-    images: ['/og-image.png'],
   },
   appleWebApp: {
     capable: true,

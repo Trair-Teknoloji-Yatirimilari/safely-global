@@ -18,6 +18,7 @@ export const translations = {
     "nav.home": "Ana Sayfa",
     "nav.features": "Özellikler",
     "nav.pricing": "Fiyatlandırma",
+    "nav.about": "Hakkımızda",
     "nav.faq": "SSS",
     "nav.support": "Destek",
     "nav.download": "İndir",
@@ -66,6 +67,7 @@ export const translations = {
     // Screenshots
     "screenshots.title": "Uygulama Ekranları",
     "screenshots.subtitle": "SAFELY'nin kullanıcı dostu arayüzünü keşfedin",
+    "screenshots.screen": "Ekran",
     
     // FAQ
     "faq.title": "Sıkça Sorulan Sorular",
@@ -116,6 +118,7 @@ export const translations = {
     "nav.home": "Home",
     "nav.features": "Features",
     "nav.pricing": "Pricing",
+    "nav.about": "About",
     "nav.faq": "FAQ",
     "nav.support": "Support",
     "nav.download": "Download",
@@ -164,6 +167,7 @@ export const translations = {
     // Screenshots
     "screenshots.title": "App Screenshots",
     "screenshots.subtitle": "Discover SAFELY's user-friendly interface",
+    "screenshots.screen": "Screen",
     
     // FAQ
     "faq.title": "Frequently Asked Questions",

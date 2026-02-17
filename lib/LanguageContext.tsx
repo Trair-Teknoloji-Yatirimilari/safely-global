@@ -17,6 +17,7 @@ export const translations = {
     // Navbar
     "nav.home": "Ana Sayfa",
     "nav.features": "Özellikler",
+    "nav.pricing": "Fiyatlandırma",
     "nav.faq": "SSS",
     "nav.support": "Destek",
     "nav.download": "İndir",
@@ -114,6 +115,7 @@ export const translations = {
     // Navbar
     "nav.home": "Home",
     "nav.features": "Features",
+    "nav.pricing": "Pricing",
     "nav.faq": "FAQ",
     "nav.support": "Support",
     "nav.download": "Download",

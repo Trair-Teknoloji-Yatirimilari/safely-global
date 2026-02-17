@@ -28,6 +28,9 @@ export default function Navbar() {
             <Link href="/#features" className="text-gray-700 hover:text-primary-600 transition">
               {t("nav.features")}
             </Link>
+            <Link href="/pricing" className="text-gray-700 hover:text-primary-600 transition">
+              {t("nav.pricing")}
+            </Link>
             <Link href="/faq" className="text-gray-700 hover:text-primary-600 transition">
               {t("nav.faq")}
             </Link>

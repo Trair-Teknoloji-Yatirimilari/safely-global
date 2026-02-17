@@ -23,6 +23,10 @@ export default function TermsPage() {
           content: "SAFELY'yi kullanırken:\n\n• Hesap bilgilerinizin güvenliğinden siz sorumlusunuz\n• Doğru ve güncel bilgi sağlamalısınız\n• Uygulamayı yasa dışı amaçlarla kullanmamalısınız\n• Başkalarının haklarını ihlal etmemelisiniz\n• Sistemi manipüle etmeye veya zarar vermeye çalışmamalısınız"
         },
         {
+          title: "4. Abonelikler ve Satın Almalar",
+          content: "SAFELY üç üyelik planı sunar:\n\n• Basic (Ücretsiz): Temel özellikler\n• Premium ($9.90/ay): Gelişmiş özellikler, sınırsız kullanım\n• VIP ($99.90/ay): Kurumsal ve aileler için tam paket\n\nYeni Kullanıcı Hediyesi:\n• Kayıt olan her kullanıcıya 7 gün ücretsiz Premium üyelik hediye edilir\n\nAbonelik Koşulları:\n• Abonelikler otomatik olarak yenilenir\n• Fiyatlar değişebilir, değişiklikler önceden bildirilir\n• Ödeme, satın alma onayında iTunes hesabınızdan tahsil edilir\n• Abonelik, mevcut dönem bitmeden en az 24 saat önce iptal edilmedikçe otomatik olarak yenilenir\n• Hesabınız, mevcut dönemin bitiminden önceki 24 saat içinde yenileme için ücretlendirilir\n• Abonelikler kullanıcı tarafından yönetilebilir ve otomatik yenileme, satın alma sonrasında kullanıcının Hesap Ayarları'na gidilerek kapatılabilir\n• Ücretsiz deneme süresinin kullanılmayan kısmı, varsa, kullanıcı o yayının aboneliğini satın aldığında kaybedilir\n\nİptal ve İade:\n• İptal işlemleri Apple App Store politikalarına tabidir\n• İade talepleri için Apple'a başvurmanız gerekir\n• Abonelik iptali, mevcut dönemin sonuna kadar erişimi etkilemez"
+        },
+        {
           title: "4. Yasaklanan Kullanımlar",
           content: "Aşağıdaki kullanımlar kesinlikle yasaktır:\n\n• Başkalarını taciz etmek veya tehdit etmek\n• Sahte bilgi veya kimlik kullanmak\n• Spam veya istenmeyen içerik göndermek\n• Virüs veya zararlı kod yaymak\n• Uygulamayı tersine mühendislik yapmak\n• Başkalarının hesaplarına yetkisiz erişim\n\nBu kurallara uymayan hesaplar askıya alınabilir veya silinebilir."
         },
@@ -71,6 +75,10 @@ export default function TermsPage() {
         {
           title: "3. User Responsibilities",
           content: "When using SAFELY:\n\n• You are responsible for your account security\n• You must provide accurate and current information\n• You must not use the app for illegal purposes\n• You must not violate others' rights\n• You must not attempt to manipulate or damage the system"
+        },
+        {
+          title: "4. Subscriptions and Purchases",
+          content: "SAFELY offers three membership plans:\n\n• Basic (Free): Essential features\n• Premium ($9.90/month): Advanced features, unlimited usage\n• VIP ($99.90/month): Complete package for enterprise and families\n\nNew User Gift:\n• Every new user receives 7 days of free Premium membership\n\nSubscription Terms:\n• Subscriptions automatically renew\n• Prices may change, changes will be notified in advance\n• Payment will be charged to your iTunes Account at confirmation of purchase\n• Subscription automatically renews unless auto-renew is turned off at least 24 hours before the end of the current period\n• Your account will be charged for renewal within 24 hours prior to the end of the current period\n• Subscriptions may be managed by the user and auto-renewal may be turned off by going to the user's Account Settings after purchase\n• Any unused portion of a free trial period, if offered, will be forfeited when the user purchases a subscription\n\nCancellation and Refunds:\n• Cancellations are subject to Apple App Store policies\n• For refund requests, you must contact Apple\n• Canceling a subscription does not affect access until the end of the current period"
         },
         {
           title: "4. Prohibited Uses",

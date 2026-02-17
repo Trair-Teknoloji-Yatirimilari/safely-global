@@ -32,7 +32,7 @@ export default function FAQPage() {
         },
         {
           q: "Uygulama ücretsiz mi?",
-          a: "Evet, SAFELY şu anda tamamen ücretsizdir. Temel güvenlik özelliklerinin herkes için erişilebilir olmasını istiyoruz."
+          a: "SAFELY temel özellikleri ücretsiz sunar. Premium özellikler için abonelik seçenekleri mevcuttur. Fiyatlar uygulama içinde görüntülenebilir."
         },
         {
           q: "Hangi cihazlarda çalışır?",
@@ -78,7 +78,7 @@ export default function FAQPage() {
         },
         {
           q: "Is the app free?",
-          a: "Yes, SAFELY is currently completely free. We want basic safety features to be accessible to everyone."
+          a: "SAFELY offers basic features for free. Premium features are available through subscription options. Prices can be viewed in the app."
         },
         {
           q: "Which devices does it work on?",

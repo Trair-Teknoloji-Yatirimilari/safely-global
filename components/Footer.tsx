@@ -12,7 +12,12 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
-              <div className="w-8 h-8 bg-gradient-to-br from-purple-500 to-blue-500 rounded-lg"></div>
+              <div className="w-8 h-8 bg-gradient-to-br from-blue-900 to-blue-600 rounded-lg flex items-center justify-center">
+                <svg width="20" height="20" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M50 10 L80 25 L80 60 Q80 75 50 90 Q20 75 20 60 L20 25 Z" stroke="#7dd3fc" strokeWidth="4" fill="none"/>
+                  <path d="M30 50 L40 55 L50 35 L60 60 L70 50" stroke="#7dd3fc" strokeWidth="4" fill="none" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+              </div>
               <span className="text-xl font-bold">SAFELY</span>
             </div>
             <p className="text-gray-300 mb-4">{t("footer.description")}</p>

@@ -216,14 +216,40 @@ export const translations = {
 };
 
 export function LanguageProvider({ children }: { children: ReactNode }) {
-  const [language, setLanguage] = useState<Language>("tr");
+  const [language, setLanguage] = useState<Language>('en');
+  const [mounted, setMounted] = useState(false);
+
+  // Load language from localStorage after mount to avoid hydration mismatch
+  React.useEffect(() => {
+    const saved = localStorage.getItem('language');
+    if (saved && (saved === 'tr' || saved === 'en')) {
+      setLanguage(saved as Language);
+    }
+    setMounted(true);
+  }, []);
+
+  const handleSetLanguage = (lang: Language) => {
+    setLanguage(lang);
+    if (typeof window !== 'undefined') {
+      localStorage.setItem('language', lang);
+    }
+  };
 
   const t = (key: string): string => {
     return translations[language][key as keyof typeof translations.tr] || key;
   };
 
+  // Prevent hydration mismatch by rendering with default language first
+  if (!mounted) {
+    return (
+      <LanguageContext.Provider value={{ language: 'en', setLanguage: handleSetLanguage, t }}>
+        {children}
+      </LanguageContext.Provider>
+    );
+  }
+
   return (
-    <LanguageContext.Provider value={{ language, setLanguage, t }}>
+    <LanguageContext.Provider value={{ language, setLanguage: handleSetLanguage, t }}>
       {children}
     </LanguageContext.Provider>
   );

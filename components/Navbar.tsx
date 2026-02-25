@@ -2,10 +2,31 @@
 
 import Link from "next/link";
 import { useLanguage } from "@/lib/LanguageContext";
-import AppStoreBadge from "./AppStoreBadge";
+import { useState, useRef, useEffect } from "react";
 
 export default function Navbar() {
   const { language, setLanguage, t } = useLanguage();
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const dropdownRef = useRef<HTMLDivElement>(null);
+
+  // Close dropdown when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+        setIsDropdownOpen(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, []);
+
+  const languages = [
+    { code: 'en', name: 'English', flag: '🇬🇧' },
+    { code: 'tr', name: 'Türkçe', flag: '🇹🇷' },
+  ];
+
+  const currentLanguage = languages.find(lang => lang.code === language);
 
   return (
     <nav className="bg-white/80 backdrop-blur-md border-b border-gray-200 sticky top-0 z-50">
@@ -43,12 +64,48 @@ export default function Navbar() {
           </div>
 
           <div className="flex items-center space-x-4">
-            <button
-              onClick={() => setLanguage(language === "tr" ? "en" : "tr")}
-              className="px-3 py-1 text-sm border border-gray-300 rounded-lg hover:bg-gray-50 transition"
-            >
-              {language === "tr" ? "EN" : "TR"}
-            </button>
+            <div className="relative" ref={dropdownRef}>
+              <button
+                onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+                className="flex items-center space-x-2 px-3 py-2 text-sm border border-gray-300 rounded-lg hover:bg-gray-50 transition"
+              >
+                <span className="text-xl">{currentLanguage?.flag}</span>
+                <span className="hidden sm:inline">{currentLanguage?.name}</span>
+                <svg 
+                  className={`w-4 h-4 transition-transform ${isDropdownOpen ? 'rotate-180' : ''}`} 
+                  fill="none" 
+                  stroke="currentColor" 
+                  viewBox="0 0 24 24"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+
+              {isDropdownOpen && (
+                <div className="absolute right-0 mt-2 w-48 bg-white rounded-lg shadow-lg border border-gray-200 py-1 z-50">
+                  {languages.map((lang) => (
+                    <button
+                      key={lang.code}
+                      onClick={() => {
+                        setLanguage(lang.code as 'tr' | 'en');
+                        setIsDropdownOpen(false);
+                      }}
+                      className={`w-full flex items-center space-x-3 px-4 py-2 text-left hover:bg-gray-50 transition ${
+                        language === lang.code ? 'bg-primary-50 text-primary-700' : 'text-gray-700'
+                      }`}
+                    >
+                      <span className="text-2xl">{lang.flag}</span>
+                      <span className="font-medium">{lang.name}</span>
+                      {language === lang.code && (
+                        <svg className="w-5 h-5 ml-auto text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                        </svg>
+                      )}
+                    </button>
+                  ))}
+                </div>
+              )}
+            </div>
           </div>
         </div>
       </div>

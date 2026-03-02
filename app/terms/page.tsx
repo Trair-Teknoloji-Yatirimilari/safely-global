@@ -11,6 +11,10 @@ export default function TermsPage() {
       lastUpdated: "Son Güncelleme: Şubat 2026",
       sections: [
         {
+          title: "⚠️ Acil Durum Hizmetleri Hakkında Önemli Uyarı",
+          content: "SAFELY, resmi acil durum servislerinin (112, ambulans, polis, itfaiye) yerine geçmez ve bu servislere doğrudan bağlantı sağlamaz. Uygulama sadece aşağıdaki işlevleri yerine getirir:\n\n• Güvenilir kişilerinize bildirim gönderir\n• Konumunuzu güvenilir kişilerinizle paylaşır\n• Acil durum durumunuzu yakınlarınıza iletir\n\nGerçek bir acil durumda mutlaka 112'yi arayın veya yerel acil durum servislerinizi kullanın.\n\nSAFELY, acil durum servislerinin yanıt süresinden, müdahale kalitesinden veya sonuçlarından sorumlu değildir."
+        },
+        {
           title: "1. Kabul",
           content: "SAFELY uygulamasını kullanarak, bu kullanım koşullarını kabul etmiş olursunuz. Koşulları kabul etmiyorsanız, lütfen uygulamayı kullanmayın."
         },
@@ -64,6 +68,10 @@ export default function TermsPage() {
       title: "Terms of Use",
       lastUpdated: "Last Updated: February 2026",
       sections: [
+        {
+          title: "⚠️ Important Notice About Emergency Services",
+          content: "SAFELY does NOT replace or directly connect to official emergency services (911, 112, ambulance, police, fire department).\n\nThe app only provides the following functions:\n\n• Sends notifications to your trusted contacts\n• Shares your location with your trusted contacts\n• Communicates your emergency status to your loved ones\n\nIn a real emergency, always call 911/112 or use your local emergency services.\n\nSAFELY is not responsible for emergency services' response time, quality of intervention, or outcomes."
+        },
         {
           title: "1. Acceptance",
           content: "By using the SAFELY application, you accept these terms of use. If you do not accept the terms, please do not use the application."

@@ -40,7 +40,7 @@ export default function TermsPage() {
         },
         {
           title: "6. Sorumluluk Sınırlaması",
-          content: "Yasaların izin verdiği ölçüde:\n\n• SAFELY 'olduğu gibi' sağlanır, garanti verilmez\n• Hizmet kesintilerinden sorumlu değiliz\n• Veri kaybından sorumlu değiliz\n• Dolaylı veya arızi zararlardan sorumlu değiliz\n• Maksimum sorumluluğumuz ödediğiniz ücretle sınırlıdır (şu anda ücretsiz)\n\nBazı yargı bölgeleri sorumluluk sınırlamalarına izin vermez, bu durumda yukarıdakiler geçerli olmayabilir."
+          content: "Yasaların izin verdiği ölçüde:\n\n• SAFELY 'olduğu gibi' sağlanır, garanti verilmez\n• Hizmet kesintilerinden sorumlu değiliz\n• Veri kaybından sorumlu değiliz\n• Dolaylı veya arızi zararlardan sorumlu değiliz\n• Maksimum sorumluluğumuz, yasaların izin verdiği ölçüde, kullanıcının önceki 12 ayda abonelik için ödediği toplam tutarı aşmayacaktır\n\nBazı yargı bölgeleri sorumluluk sınırlamalarına izin vermez, bu durumda yukarıdakiler geçerli olmayabilir."
         },
         {
           title: "7. Fikri Mülkiyet",
@@ -98,7 +98,7 @@ export default function TermsPage() {
         },
         {
           title: "6. Limitation of Liability",
-          content: "To the extent permitted by law:\n\n• SAFELY is provided 'as is' without warranty\n• We are not responsible for service interruptions\n• We are not responsible for data loss\n• We are not responsible for indirect or incidental damages\n• Our maximum liability is limited to fees paid (currently free)\n\nSome jurisdictions do not allow liability limitations, in which case the above may not apply."
+          content: "To the extent permitted by law:\n\n• SAFELY is provided 'as is' without warranty\n• We are not responsible for service interruptions\n• We are not responsible for data loss\n• We are not responsible for indirect or incidental damages\n• Our maximum liability, to the extent permitted by law, shall not exceed the total amount paid by the user for the subscription in the preceding 12 months\n\nSome jurisdictions do not allow liability limitations, in which case the above may not apply."
         },
         {
           title: "7. Intellectual Property",

@@ -49,9 +49,10 @@ export default function Navbar() {
             <Link href="/#features" className="text-gray-700 hover:text-primary-600 transition">
               {t("nav.features")}
             </Link>
-            <Link href="/pricing" className="text-gray-700 hover:text-primary-600 transition">
+            {/* Pricing link disabled for Apple Store approval */}
+            {/* <Link href="/pricing" className="text-gray-700 hover:text-primary-600 transition">
               {t("nav.pricing")}
-            </Link>
+            </Link> */}
             <Link href="/about" className="text-gray-700 hover:text-primary-600 transition">
               {t("nav.about")}
             </Link>

@@ -37,11 +37,7 @@ export default function Footer() {
                   {t("nav.about")}
                 </Link>
               </li>
-              <li>
-                <Link href="/pricing" className="text-gray-300 hover:text-white transition">
-                  {t("nav.pricing")}
-                </Link>
-              </li>
+              {/* Pricing link disabled for Apple Store approval */}
               <li>
                 <Link href="/faq" className="text-gray-300 hover:text-white transition">
                   {t("nav.faq")}
